@@ -1,0 +1,58 @@
+# ── Secrets ──────────────────────────────────────────────────────────────────
+.env
+*.env
+.env.*
+!.env.example
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+.Python
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# ── ChromaDB vector store (rebuilt on first run) ──────────────────────────────
+chroma_store/
+
+# ── Uploaded / source PDFs (sensitive data, never commit) ────────────────────
+data/*.pdf
+
+# ── Test artefacts ────────────────────────────────────────────────────────────
+test_results.json
+*.log
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/
+
+# ── IDEs & editors ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ── OS artefacts ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter (if used for exploration) ────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Coverage / test tooling ───────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
